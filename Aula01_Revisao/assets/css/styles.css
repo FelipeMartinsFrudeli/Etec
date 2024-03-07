@@ -1,5 +1,7 @@
 * {
     outline: 1px solid lightgray;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -26,4 +28,40 @@ header .item {
     outline: 1px solid var(--secondary-color);
     padding: 8px;
     border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    min-width: 100px;
+}
+
+header .item a {
+	text-decoration: none;
+}
+
+header .item:hover, header .item:hover > * {
+    background: var(--quinary-color);
+    color: var(--secondary-color);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+section { padding: 16px; }
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+section p { font-size: 1.2rem; }
+
+.brasil .image-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brasil .image-list img {
+    object-fit: cover;
+    width: 33%;
+    height: 300px;
 }
