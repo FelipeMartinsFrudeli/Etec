@@ -1,0 +1,28 @@
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="botao">
+        <p>Botao 1</p>
+    </div>
+
+    <div class="box">
+        
+    </div>
+
+    <script>
+        let botao = document.querySelector('.botao');
+        let box = document.querySelector('.box');
+
+        let hidden = false 
+
+        botao.addEventListener('click', (e) => {
+            hidden = !hidden
+            return hidden ? box.classList.add('box-inativo') : box.classList.remove('box-inativo'), 
+                    hidden ? box.classList.remove('aumentar') : box.classList.add('aumentar') 
+        })
+    </script>
+</body>
+

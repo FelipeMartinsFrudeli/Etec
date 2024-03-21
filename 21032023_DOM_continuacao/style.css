@@ -1,0 +1,32 @@
+
+.botao {
+    width: 100px;
+    height: 70px;
+    background: purple;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.botao > * {
+    user-select: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    transition: 0.2s;
+}
+
+.box-ativo { display: flex; }
+.box-inativo { display: none; }
+
+.aumentar {
+    width: 600px;
+    height: 600px;
+}
